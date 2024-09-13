@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>examen 1</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
+</head>
+
+<header>
+    <!-- menu principal y secundario -->
+    <fieldset>
+        <img src="ima_exa/logo.jpg" alt="logo" id="logo">
+
+
+
+        <section class="menu">
+            <img src="ima_exa/flecha.png" alt="flecha" class="flecha">
+            <div class="menu-items">
+                <a href="#" class="letra1">inicio</a>
+                <a href="#" class="letra1">tienda</a>
+                <a href="#" class="letra1">clases</a>
+            </div>
+        </section>
+
+        <script>
+            const flecha = document.querySelector('.flecha');
+            const menutop = document.querySelector('.menu-items');
+
+            flecha.addEventListener('click', () => {
+                menutop.classList.toggle('mover');
+            })
+        </script>
+
+
+
+        <section class="menu2">
+            <a href="#" class="letra">inscripcion</a>
+            <a href="#" class="letra">ingresar</a>
+        </section>
+    </fieldset>
+
+</header>
+
+<body>
+
+
+
+    <!-- zona de imagen solida -->
+    <section id="cuadro">
+        <img src="ima_exa/limpieza.png" alt="bailarina" class="baila">
+        <p id="titulo">Petit Dance Academy</p>
+        <img src="ima_exa/limpieza.png" alt="ailarina" class="baila" id="voltea">
+    </section>
+
+
+    <!-- menu despregable de notificaciones -->
+    
+    <img src="ima_exa/pngegg.png" alt="mini" width="30px" class="mini">
+    <section id="activi" class="activia">
+        
+        <div class="menu-items2">
+        <p class="ele"> <b>Actividades</b></p>
+        <ul class="ele3">
+            <ol class="ele2"> <a href="#" class="ele1">29 de septiembre audiciones</a> </ol>
+            <ol class="ele2"> <a href="#" class="ele1">15 de diciembres competencia nuevas estrellas</a></ol>
+            <ol class="ele2"> <a href="#" class="ele1">1 enero festival del fin de curso</a></ol>
+        </ul>
+        </div>
+    </section>
+    <!-- nota hay un error en este menu con su lista pero al intentar acamodarla se deforma todo  -->
+    <script>
+     const mini = document.querySelector('.mini');
+     const menutop2 = document.querySelector ('.menu-items2');
+     
+     mini.addEventListener('click', () => {
+                menutop2.classList.toggle('mover2');
+            })
+
+
+    </script>  
+
+
+
+
+
+    <!-- contenido  -->
+    <section class="contenido">
+        <div class="cajav">
+            <video controls src="ima_exa/promoa.mp4" type="promoa" class="video"></video>
+        </div>
+
+        <div>
+            <p>
+                El hermoso recital de la bella y la bestia, orquestada por la directora Diana, una encantadora historia
+                de una joven pueblerina y una terrible bestia, con la participación de todo el
+                alumnado de la academia <u>“Petit Dance Academy”</u>. No te la puedes perder este 18 de enero del 2024
+            </p>
+            <a href="#"> <b>Leer mas.</b> </a>
+        </div>
+    </section>
+
+
+
+    <section class="contenido">
+        <div class="cajav">
+            <img src="ima_exa/wonka.jpg" alt="wonka" class="wonka" id="slideshow">
+        </div>
+
+        <div>
+            <p>
+                ¡Listos para ir a la fabrica!, acompaña a charlie y su abuelo a una extraña aventura por la fabrica,
+                protagonizada por los alimnos de teatro de la maestra Alondra
+                junto con todos sus estudiantes de <u>Petit Dance Academy</u>. Ven y diviertete este 18 de mayo
+
+            </p>
+            <a href="#"><B>Leer mas.</B></a>
+        </div>
+    </section>
+
+  
+ <script>
+        const images = ["ima_exa/wonka.jpg", "ima_exa/wonka2.jpg", "ima_exa/wonka3.jpg"]; // Lista de imágenes
+        let currentIndex = 0; // Índice de la imagen actual
+        const slideshow = document.getElementById("slideshow"); // Elemento de la imagen
+
+        function changeImage() {
+            currentIndex = (currentIndex + 1) % images.length; // Cambia al siguiente índice
+            slideshow.src = images[currentIndex]; // Cambia la imagen
+        }
+
+        setInterval(changeImage, 3000); // Cambia la imagen cada 3 segundos
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="contenido">
+        <div class="cajav">
+            <video controls src="ima_exa/babyedit.mp4" type="baby" class="video"></video>
+        </div>
+        <div>
+            <p>
+
+                ¡Mamis!, las clases de baby and mommy ya están disponibles. Que esperas,
+                las inscripciones ya se encuentran abiertas. Córrele en apartar tu lugar.
+
+            </p><a href="#"><b>Leer mas.</b></a>
+
+        </div>
+    </section>
+
+
+
+</body>
+
+
+<!-- fin de la pagina  -->
+
+
+
+
+
+<footer>
+
+    <section>
+        <img src="ima_exa/candado.png" alt="candado" class="fima">
+    </section>
+
+    <section id="mover">
+        <section class="cajab">
+            <a href="#">Sobre nosotros</a>
+            <a href="#">Aviso de privacidad</a>
+            <a href="#">Terminos y condiciones</a>
+        </section>
+
+
+        <section class="cajab">
+            <a href="#">condiciones de uso</a>
+            <a href="#">pagos seguros</a>
+            <p>© 2014 - 2024</p>
+        </section>
+
+    </section>
+
+</footer>
+
+</html>

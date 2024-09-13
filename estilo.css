@@ -1,0 +1,383 @@
+*{
+    border: 0px solid rgba(255, 255, 255, 0);
+    margin: 0;
+}
+
+/*menu y barra principal*/
+
+#logo{
+   height: 100px;
+   width: 160px;
+}
+.menu{
+    width: 60%;
+    height: auto;
+    position: absolute;
+    right: 10%;
+    top: 5%;
+    
+}
+.flecha{
+    display: none;
+}
+.menu .letra1{
+    color: black;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    margin-left: 100px;
+   
+}
+.menu2{
+    width: 15%;
+    height: auto;
+    position: absolute;
+    right: 5%;
+    top: 10%;
+}
+.menu2 .letra{
+    color: black;
+    font-style: italic;
+    margin-left: 10px;
+    float: inline-end;
+}
+
+/*barra de imagen*/
+.baila{
+    width: 20%;
+    height: auto;
+   /* clip-path: inset(0 0 50% 0);*/
+    z-index: -1;
+    filter: grayscale(70%);
+    
+}
+#voltea{
+    transform: scaleX(-1);
+    
+}
+#titulo{
+    width: 58%;
+    text-align: center;
+    font-size: 50px;
+    color: rgba(132, 51, 209, 0.753);
+    text-shadow: 1px 1px 0 rgb(250, 226, 242);
+    font-family: "Playwrite CU", cursive;
+}
+#cuadro{
+    
+    width: 100%;
+    height: 200px;
+    background-color: rgba(196, 141, 196, 0.692);
+    display: flex;
+}
+
+/* caja de actividades */
+
+#activi{
+    width: 14%;
+    height: auto;
+    background-color: rgba(199, 106, 224, 0.674);
+    border-radius: 5%;
+    border: 3px solid rgb(161, 135, 174);
+}
+#activi{
+    z-index: 1;
+    float: inline-end;
+    position: sticky;
+    right: 2%;
+    top: 1%;
+
+}
+#activi .ele{
+    font-size: 20px;
+    text-align: center;
+    border-bottom: 3px solid black;
+
+}
+#activi .ele1{
+    
+    color: black;
+    padding: 2px;
+    text-align: justify;
+}
+.ele2{
+    width: 75%;
+    margin-bottom: 30px;
+    
+}
+.ele3{
+
+    padding: 0;
+}
+.mini{
+    float: inline-start;
+    display: none;
+}
+/*contenido*/
+.cajav{
+    margin: 10px;
+}
+.video{
+width: 400px;
+height: auto;
+}
+.contenido{
+    width: 83%;
+    height: auto;
+    display: flex;
+}
+.contenido p{
+    margin-top:5% ;
+    padding: 5px;
+    text-align: justify;
+    font-size:150%;
+    font-style: italic;
+}
+.contenido a{
+    margin: 3px;
+    color: black;
+    float: inline-end;
+}
+
+.wonka{
+    width: 100%;
+    height: auto;
+}
+
+/* pie de pagina*/
+
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    display: flex;
+}
+
+.cajab{
+    
+   padding: 10px;
+    float: inline-end;
+}
+
+.cajab a{
+    font-size: 100%;
+    color: aliceblue;
+    display: block;
+
+}
+.cajab p{
+    color: aliceblue;
+    font-size: 100%;
+    
+   
+    
+}
+.fima{
+    width: 30%;
+    height: auto;
+}
+#mover{
+
+    margin-left: 60%;
+}
+
+
+/* medias */
+
+
+@media screen and (max-width: 1024px){
+    .menu2{
+    top: 3%;
+}
+.contenido{
+    height: 430px;
+}
+.contenido p{
+    font-size: 30px;
+}
+footer{
+   
+    height: auto;
+    display: flex;
+}
+#mover{
+    width: 80%;
+    display: block;
+}
+
+}
+
+@media screen and (max-width: 720px){
+    .contenido{
+        height: auto;
+        margin-bottom: 20px;
+    }s
+    .contenido p{
+        font-size:150%;
+    }
+    .menu2{
+        right: 2%;
+        top: 6%;
+    }
+    #titulo{
+        margin-bottom: 10px;
+        width: 80%;
+        font-size: 45px;
+        
+        
+    }
+    /* zona de menu*/
+    .menu{
+        width: 65%;
+        right: 3%;
+        top: 5%;
+        display: flex;
+        
+    }
+    .menu .letra1{
+        
+        margin-left: 50px;
+       
+    }
+   
+    /* cuadro de actividades*/
+   #activi{
+    z-index: 10;
+    width: 50%;
+    border: 1px rgba(246, 246, 246, 0);
+   }
+   
+   .mini{
+    display: flex;
+    float: inline-end;
+    position: sticky;
+    right: 2%;
+    top: 1%;
+    background-color: rgb(197, 221, 241);
+   }
+   
+
+    /*scrip de activiti*/
+    .menu-items2 {
+        visibility: hidden;
+        display: none;
+        
+        
+    }
+    
+    .menu-items2.mover2 {
+        visibility: visible;
+        display: block;
+        top: 0;
+    }
+    
+    .mini {
+        cursor: pointer;
+        
+    }
+
+
+
+/* zona de cuadro de imagen*/
+
+
+
+.contenido{
+    width: 100%;
+    
+}
+/* pie de pagina*/
+.fima{
+    width: 50%;
+    
+}
+
+#mover{
+    width: 100%;
+   display: flex;
+}
+
+}
+
+
+
+
+@media screen and (max-width: 480px){
+/* barra de menu*/
+
+.menu{
+    width: 40%;
+    right: 3%;
+    border: 3px rgb(8, 8, 8);
+
+}
+.contenido p{
+    font-size: 20px;
+}
+
+
+.flecha{
+ 
+    display: flex;
+    width: 10%;
+    height: 20px;
+}
+
+.menu-items {
+    visibility: hidden;
+    transition: transform 0.5s ease;
+}
+
+.menu-items.mover {
+    visibility: visible;
+    transform: translatey(20px); 
+    top: 0;
+}
+
+.flecha {
+    cursor: pointer;
+    width: 20px ;
+}
+
+
+.menu2{
+   
+    z-index: 4;
+    top: 15%;
+   left: 80%;
+}
+
+
+
+
+
+
+
+
+
+
+/*zona de contenido*/
+    .contenido{
+        width: 100%;
+       display: block;
+       
+    }
+/* pie de pagina*/
+
+#mover{
+    width: 100%;
+    font-size: 10px;
+    margin-left: 50%;
+}
+.fima{
+    width: 90%;
+    margin-left: 20px;
+    
+}
+.cajab{
+    padding: 6px;
+    width: 80px;
+   
+}
+
+}
